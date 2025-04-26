@@ -1,0 +1,365 @@
+/*study tip css kuno*/
+.container {
+    button {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    }
+
+    h2:hover {
+        background-color: bisque;
+    }
+}
+
+.study-tips {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.tips-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.tip-card {
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    h3 {
+        background-color: rgb(68, 192, 230);
+        border-radius: 5px;
+    }
+
+    h3:hover {
+        background-color: bisque;
+        font-size: 22px;
+    }
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+/*testimonial css ni*/
+.testimonials {
+    display: flex;
+    gap: 30px;
+}
+
+.test-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.test-card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    img {
+        width: 20%;
+        height: auto;
+        border-radius: 50%;
+
+    }
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+        float: right;
+
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+
+/*sa articlecss kuno*/
+.container {
+    h2:hover {
+        background-color: bisque;
+    }
+}
+
+.arti-tips {
+    display: flex;
+    gap: 30px;
+}
+
+.arti-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.arti-card {
+    width: 33.33%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    h3 {
+        background-color: rgb(68, 192, 230);
+        border-radius: 5px;
+        border-style: solid;
+        border-color: aquamarine;
+    }
+
+    p {
+        text-indent: 1cm;
+        text-align: justify;
+    }
+
+    h3:hover {
+        background-color: bisque;
+        font-size: 22px;
+    }
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+
+    }
+
+    button a {
+        text-decoration: none;
+        color: black;
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+
+
+/*qoute*/
+.container {
+    h2:hover {
+        background-color: bisque;
+    }
+}
+
+.Quote-tips {
+    display: flex;
+    gap: 30px;
+}
+
+.quote-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.quote-card {
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    position: relative;
+    width: 100%;
+
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-color: black;
+        border-style: solid;
+        border-radius: 10px;
+    }
+
+    button a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        color: black;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    button a:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.container {
+    h2:hover {
+        background-color: bisque;
+    }
+
+}
+
+.center img:first-child {
+    opacity: 0.3;
+}
+
+
+/*vid*/
+.vid-tips {
+    display: flex;
+    gap: 30px;
+}
+
+.vid-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.vid-card {
+    width: 44.33%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+
+/*learningmaterial*/
+.container {
+    h2:hover {
+        background-color: bisque;
+    }
+}
+
+.learn {
+    display: flex;
+    gap: 30px;
+}
+
+.learn-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.learn-card {
+    width: 33.33%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    h3 {
+        background-color: rgb(68, 192, 230);
+        border-radius: 5px;
+    }
+
+    p {
+        text-indent: 1cm;
+        text-align: justify;
+    }
+
+    h3:hover {
+        background-color: bisque;
+        font-size: 22px;
+    }
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+.learn-card:hover {
+    padding: 25px;
+
+}
+
+/*gotofeature*/
+.get-started {
+    background: radial-gradient(circle at center, #6ab1f7, #4a90e2);
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.get-started h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.get-started .btn {
+    background: #ffffff;
+    color: #4a90e2;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.get-started .btn:hover {
+    background: #e0e0e0;
+    color: #2c6fc1;
+}

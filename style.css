@@ -1,0 +1,618 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b4e9ff;
+    color: #000000;
+    padding: 15px 0;
+    position: relative;
+    z-index: 1000;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo a {
+    color: #000000;
+    font-size: 1.8em;
+    font-weight: bold;
+    float: left;
+    text-decoration: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+    position: absolute;
+    background-color: #4f6d7a;
+    min-width: 160px;
+    text-align: center;
+    padding-right: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 10px #bdbdbd;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown {
+    background-color: #fdfdfd;
+}
+
+.dropdown-content li a:hover {
+    background-color: #fbc687;
+
+}
+
+.hero {
+    background: linear-gradient(to right, #7596b6, #7e89ca);
+    text-align: center;
+    padding: 100px 20px;
+    color: #ffffff;
+
+    h1 {
+        -webkit-text-stroke: 1px #000000;
+    }
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4f6d7a;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:focus {
+    outline: 2px dashed #333;
+    outline-offset: 4px;
+}
+
+.hero .btn:hover {
+    box-shadow: 0px 0px 20px #a11b1b;
+    background-color: #abb9be;
+    color: wheat;
+    transform: translateY(-5px);
+
+}
+
+.intro {
+    padding: 60px 20px;
+    background-color: #f4f7fa;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        justify-content: center;
+    }
+
+    nav ul {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #4f6d7a;
+        position: absolute;
+        top: 95px;
+        right: 0px;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
+
+    #menu-toggle:checked+.hamburger+nav ul {
+        display: flex;
+    }
+
+    header::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .dropdown .dropdown-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+        display: none;
+    }
+
+    .dropdown.open .dropdown-content {
+        display: block;
+        background-color: #4f6d7a;
+    }
+
+    .dropdown-content a {
+        display: none;
+        padding: 10px;
+        color: #fff;
+        background-color: #4f6d7a;
+        border-top: 1px solid #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropdown {
+        background-color: #fdfdfd;
+    }
+}
+
+/*study tip css kuno*/
+.container {
+    button {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    }
+
+    h2:hover {
+        background-color: bisque;
+    }
+}
+
+.study-tips {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.tips-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.tip-card {
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    h3 {
+        background-color: rgb(68, 192, 230);
+        border-radius: 5px;
+    }
+
+    h3:hover {
+        background-color: bisque;
+        font-size: 22px;
+    }
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+/*testimonial css ni*/
+.testimonials {
+    display: flex;
+    gap: 30px;
+}
+
+.test-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.test-card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+        float: right;
+
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+
+/*sa articlecss kuno*/
+.container {
+    h2:hover {
+        background-color: bisque;
+    }
+}
+
+.arti-tips {
+    display: flex;
+    gap: 30px;
+}
+
+.arti-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.arti-card {
+    width: 33.33%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    h3 {
+        background-color: rgb(68, 192, 230);
+        border-radius: 5px;
+        border-style: solid;
+        border-color: aquamarine;
+    }
+
+    p {
+        text-indent: 1cm;
+        text-align: justify;
+    }
+
+    h3:hover {
+        background-color: bisque;
+        font-size: 22px;
+    }
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+
+    }
+
+    button a {
+        text-decoration: none;
+        color: black;
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+
+
+/*qoute*/
+.container {
+    h2:hover {
+        background-color: bisque;
+    }
+}
+
+.Quote-tips {
+    display: flex;
+    gap: 30px;
+}
+
+.quote-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.quote-card {
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    position: relative;
+    width: 100%;
+
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-color: black;
+        border-style: solid;
+        border-radius: 10px;
+    }
+
+    button a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        color: black;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+
+    }
+
+    button a:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.container {
+    h2:hover {
+        background-color: bisque;
+    }
+
+}
+
+.center img:first-child {
+    opacity: 0.3;
+}
+
+
+/*vid*/
+.vid-tips {
+    display: flex;
+    gap: 30px;
+}
+
+.vid-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.vid-card {
+    width: 44.33%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+
+/*learningmaterial*/
+.container {
+    h2:hover {
+        background-color: bisque;
+    }
+}
+
+.learn {
+    display: flex;
+    gap: 30px;
+}
+
+.learn-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.learn-card {
+    width: 33.33%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+
+    h3 {
+        background-color: rgb(68, 192, 230);
+        border-radius: 5px;
+    }
+
+    p {
+        text-indent: 1cm;
+        text-align: justify;
+    }
+
+    h3:hover {
+        background-color: bisque;
+        font-size: 22px;
+    }
+
+    button {
+        margin-top: 10px;
+        border: none;
+        box-shadow: 0 0 5px;
+        background-color: rgb(166, 197, 238);
+        padding: 5px;
+
+    }
+
+    button:hover {
+        transform: translateY(-6px);
+        padding: 6px;
+        background-color: bisque;
+    }
+}
+
+.learn-card:hover {
+    padding: 25px;
+
+}
+
+/*gotofeature*/
+.get-started {
+    background: radial-gradient(circle at center, #6ab1f7, #4a90e2);
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.get-started h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.get-started .btn {
+    background: #ffffff;
+    color: #4a90e2;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.get-started .btn:hover {
+    background: #e0e0e0;
+    color: #2c6fc1;
+}
